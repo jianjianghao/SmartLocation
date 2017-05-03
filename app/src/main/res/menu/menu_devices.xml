@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.apress.gerber.reminders.app.RemindersActivity" >
+    <item android:id="@+id/action_bluetooth"
+    android:title="通过蓝牙添加"
+    android:orderInCategory="100"
+    app:showAsAction="never" />
+    <item android:id="@+id/action_wifi"
+        android:title="通过局域网添加"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_wlan"
+        android:title="通过账户添加"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

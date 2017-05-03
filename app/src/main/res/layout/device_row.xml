@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <view
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            class="android.view.View"
+            android:id="@+id/row_tab"
+            android:background="@color/colorPrimaryDark"/>
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/grIV"
+                android:background="#c7c7c7"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"/>
+            <RelativeLayout
+                android:layout_toRightOf="@id/grIV"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/row_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="12sp"
+                        android:id="@+id/row_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="12sp"
+                        android:id="@+id/row_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_build_black_15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:background="#c7c7c7"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+</LinearLayout>

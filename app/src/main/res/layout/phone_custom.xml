@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/custom_root_layout"
+              android:layout_width="300dp"
+              android:layout_height="fill_parent"
+     android:background="@color/white"
+              android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/custom_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:background="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="新建联系人" />
+    <EditText
+        android:id="@+id/custom_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:background="@color/light_grey"
+        android:hint="请输入姓名"
+        android:textColor="@color/black">
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:inputType="phone"
+        android:id="@+id/custom_edit_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:padding="4dp"
+        android:background="@color/light_grey"
+        android:hint="请输入电话"
+        android:textColor="@color/black">
+    </EditText>
+    <CheckBox
+        android:id="@+id/custom_check_box"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="4dp"
+        android:paddingLeft="0dp"
+        android:text="重要" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/custom_button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="取消"   />
+        <Button
+            android:id="@+id/custom_button_commit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="保存" />
+    </LinearLayout>
+</LinearLayout>

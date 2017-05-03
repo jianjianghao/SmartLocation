@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#3F51B5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:onClick="backHome"
+            android:id="@+id/main_logo"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:onClick="backHome"
+            android:textColor="@color/colorWrite"
+            android:layout_toRightOf="@id/main_logo"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/PageTitle"
+            android:id="@+id/page_title"
+            android:textColor="@color/colorWrite"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="意见反馈"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:padding="10dp"
+            android:hint="请输入反馈问题。。。"
+            android:id="@+id/txtAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/light_grey"
+            android:gravity="top"/>
+    <Button
+        android:id="@+id/btnSendAdvice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我要反馈"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:background="#3F51B5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:onClick="backHome"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/main_logo"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:onClick="backHome"
+            android:textColor="@color/colorWrite"
+            android:layout_toRightOf="@id/main_logo"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/PageTitle"
+            android:id="@+id/page_title"
+            android:textColor="@color/colorWrite"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="个人信息"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+<ListView
+    android:padding="15dp"
+    android:id="@+id/view_myInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></ListView>
+
+
+
+     <TextView
+        android:background="@drawable/btn_selected"
+        android:layout_marginLeft="5dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="登录"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+         android:layout_height="wrap_content" />
+
+
+</LinearLayout>

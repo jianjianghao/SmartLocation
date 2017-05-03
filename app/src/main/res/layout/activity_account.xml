@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <RelativeLayout
+                android:background="#3F51B5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:onClick="backHome"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/main_logo"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:onClick="backHome"
+                    android:textColor="@color/colorWrite"
+                    android:layout_toRightOf="@id/main_logo"
+                    android:gravity="center_vertical"
+                    android:text="返回"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    style="@style/PageTitle"
+                    android:id="@+id/page_title"
+                    android:textColor="@color/colorWrite"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="账户"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <ImageView
+                android:scaleType="centerCrop"
+                android:background="#b4b4b4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <RelativeLayout
+                android:onClick="showMyinfo"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/grIV"
+                    android:src="@drawable/ic_account_box_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/grIV"
+                    android:text="个人信息"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+
+                android:layout_marginTop="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+            <RelativeLayout
+                android:onClick="showPhoneList"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/bsIV"
+                    android:src="@drawable/ic_assignment_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/bsIV"
+                    android:text="常用联系人"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <RelativeLayout
+                android:onClick="showAdvice"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/yjIV"
+                    android:src="@drawable/ic_border_color_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/yjIV"
+                    android:text="意见反馈"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#FF909090" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="注销"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <include android:id="@+id/menu"
+            layout="@layout/main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
